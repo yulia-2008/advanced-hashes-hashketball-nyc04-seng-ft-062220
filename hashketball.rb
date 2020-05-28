@@ -183,7 +183,7 @@ def player_stats(player_name)
       if ind[:player_name] == player_name 
        # :player_name.to_s
        # ind.delete(:player_name)
-       hash.key[0]delete
+       hash.key[0].delete
         stats=ind
 end
 end
