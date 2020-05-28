@@ -161,9 +161,6 @@ def team_names
   array=[]
    game_hash.each do |key, value|
     array << value[:team_name]
-    
-    # value[:players].each do |ind|
-    #   array << ind[:player_name]
 end
 array 
 end
@@ -177,4 +174,8 @@ def player_numbers(team_name)
        end 
      end 
    end
+end
+
+def player_stats(player_name)
+  
 end
