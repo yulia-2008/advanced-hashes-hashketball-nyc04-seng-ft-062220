@@ -190,8 +190,18 @@ end
 end
 stats 
 end
-player_stats("Jeff Adrien")
+
 
 def big_shoe_rebounds 
-  
+  shoe=0
+  rebounds=0
+  game_hash.each do |key, value|
+    value[:players].each do |ind|
+      if ind[:shoe] > shoe 
+        shoe=ind[:shoe]
+        rebounds=ind[:rebounds]
+     end
+   end 
+ end 
+ rebounds
 end
