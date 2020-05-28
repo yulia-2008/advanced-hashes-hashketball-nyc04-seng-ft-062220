@@ -181,6 +181,7 @@ def player_stats(player_name)
   game_hash.each do |key, value|
     value[:players].each do |ind|
       if ind[:player_name] == player_name 
+        ind[:player_name].to_s
         ind[:player_name].delete(:player_name)
         stats=ind
 end
