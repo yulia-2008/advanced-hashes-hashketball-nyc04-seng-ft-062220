@@ -125,21 +125,7 @@ def game_hash
     }
   }
 end
-def player_stats(player_name)
-  stats={}
-  game_hash.each do |key, value|
-    value[:players].each do |ind|
-      if ind[:player_name] == player_name 
-        :player_name.to_s
-        ind.delete(:player_name)
-       # ind.delete(:name)
-        stats=ind
-end
-end
-end
-stats 
-end
-player_stats("Jeff Adrien")
+
 
 
 
@@ -198,7 +184,7 @@ def player_stats(player_name)
     value[:players].each do |ind|
       if ind[:player_name] == player_name 
         :player_name.to_s
-        ind.delete(:player_name)
+        ind.delete("player_name")
        # ind.delete(:name)
         stats=ind
 end
