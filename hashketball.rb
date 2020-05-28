@@ -168,7 +168,7 @@ end
 def player_numbers(team_name)
   array=[]
    game_hash.each do |key, value|
-     if value[team_name] == team_name 
+     if value[:team_name] == team_name 
        value[:players].each do |ind|
         array << ind[:number]
        end 
